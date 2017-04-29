@@ -10,9 +10,9 @@ public class gibgen {
   public static void main(String[] args) {
     gibgen obj1 = new gibgen();
     Scanner keyboard = new Scanner(System.in);
-    System.out.print("Enter string: ");
+    System.out.print("Enter text-string input: ");
     String words = keyboard.nextLine();
-    System.out.println("Scrambled output: ");
+    System.out.println("Scrambled text-string output: ");
     obj1.gibberish(words);
     System.out.println();
 
@@ -48,7 +48,7 @@ public class gibgen {
       }
     }
   }
-  
+
   public void getOffset(char[] charArray) {
     if (!Character.isLetter(charArray[charArray.length-2])) {
       backOffSet = 4;
